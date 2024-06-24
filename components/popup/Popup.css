@@ -1,0 +1,22 @@
+.player-turn {
+    width: 100vw;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+
+    position: absolute;
+    top: 440px;
+    z-index: 200;
+
+    visibility: visible;
+    animation: fadeOut 1s forwards 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        display: flex;
+    }
+    100% {
+        display: none;
+    }
+}

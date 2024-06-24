@@ -1,0 +1,23 @@
+.menu-box {
+    width: 1916px;
+    height: 100vh;
+    /* border: 1px solid greenyellow; */
+
+    display: flex;
+}
+
+.left-box,
+.right-box {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid yellowgreen; */
+}
+
+.icon {
+    width: 300px !important;
+    height: 300px !important;
+
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

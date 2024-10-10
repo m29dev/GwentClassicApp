@@ -1,0 +1,480 @@
+export default deckMonsters = [
+    {
+        name: 'Eredin - Commander of the Red Riders',
+        id: '134',
+        deck: 'monsters',
+        row: 'leader',
+        strength: '',
+        ability: 'eredin_commander',
+        filename: 'eredin_silver',
+        count: '1'
+    },
+    {
+        name: 'Eredin - Bringer of Death',
+        id: '136',
+        deck: 'monsters',
+        row: 'leader',
+        strength: '',
+        ability: 'eredin_bringer_of_death',
+        filename: 'eredin_bronze',
+        count: '1'
+    },
+    {
+        name: 'Eredin - Destroyer of Worlds',
+        id: '137',
+        deck: 'monsters',
+        row: 'leader',
+        strength: '',
+        ability: 'eredin_destroyer',
+        filename: 'eredin_gold',
+        count: '1'
+    },
+    {
+        name: 'Eredin - King of the Wild Hunt',
+        id: '135',
+        deck: 'monsters',
+        row: 'leader',
+        strength: '',
+        ability: 'eredin_king',
+        filename: 'eredin_copper',
+        count: '1'
+    },
+    {
+        name: 'Eredin Bréacc Glas - The Treacherous',
+        id: '',
+        deck: 'monsters',
+        row: 'leader',
+        strength: '',
+        ability: 'eredin_treacherous',
+        filename: 'eredin_the_treacherous',
+        count: '1'
+    },
+    {
+        name: 'Arachas ',
+        id: '27',
+        deck: 'monsters',
+        row: 'close',
+        strength: '4',
+        ability: 'muster muster_to_fetch',
+        fetchMusterId: [28, 29],
+        filename: 'arachas',
+        count: '1'
+    },
+    {
+        name: 'Arachas ',
+        id: '28',
+        deck: 'monsters',
+        row: 'close',
+        strength: '4',
+        ability: 'muster muster_to_fetch',
+        fetchMusterId: [27, 29],
+        filename: 'arachas_1',
+        count: '1'
+    },
+    {
+        name: 'Arachas ',
+        id: '29',
+        deck: 'monsters',
+        row: 'close',
+        strength: '4',
+        ability: 'muster muster_to_fetch',
+        fetchMusterId: [28, 27],
+        filename: 'arachas_2',
+        count: '1'
+    },
+    {
+        name: 'Arachas- Behemoth',
+        id: '15',
+        deck: 'monsters',
+        row: 'siege',
+        strength: '6',
+        ability: 'muster muster_fetcher',
+        fetchMusterId: [27, 28, 29],
+        filename: 'arachas_behemoth',
+        count: '1'
+    },
+    {
+        name: 'Botchling',
+        id: '26',
+        deck: 'monsters',
+        row: 'close',
+        strength: '4',
+        ability: '',
+        filename: 'poroniec',
+        count: '1'
+    },
+    {
+        name: 'Celaeno Harpy',
+        id: '38',
+        deck: 'monsters',
+        row: 'agile',
+        strength: '2',
+        ability: '',
+        filename: 'celaeno_harpy',
+        count: '1'
+    },
+    {
+        name: 'Cockatrice',
+        id: '36',
+        deck: 'monsters',
+        row: 'ranged',
+        strength: '2',
+        ability: '',
+        filename: 'cockatrice',
+        count: '1'
+    },
+    {
+        name: 'Crone - Brewess',
+        id: '16',
+        deck: 'monsters',
+        row: 'close',
+        strength: '6',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [17, 18],
+        filename: 'witch_velen',
+        count: '1'
+    },
+    {
+        name: 'Crone - Weavess',
+        id: '17',
+        deck: 'monsters',
+        row: 'close',
+        strength: '6',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [16, 18],
+        filename: 'witch_velen_1',
+        count: '1'
+    },
+    {
+        name: 'Crone - Whispess',
+        id: '18',
+        deck: 'monsters',
+        row: 'close',
+        strength: '6',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [17, 16],
+        filename: 'witch_velen_2',
+        count: '1'
+    },
+    {
+        name: 'Draug',
+        id: '143',
+        deck: 'monsters',
+        row: 'close',
+        strength: '10',
+        ability: 'hero',
+        filename: 'draug',
+        count: '1'
+    },
+    {
+        name: 'Earth Elemental',
+        id: '12',
+        deck: 'monsters',
+        row: 'siege',
+        strength: '6',
+        ability: '',
+        filename: 'earth_elemental',
+        count: '1'
+    },
+    {
+        name: 'Endrega',
+        id: '34',
+        deck: 'monsters',
+        row: 'ranged',
+        strength: '2',
+        ability: '',
+        filename: 'endrega',
+        count: '1'
+    },
+    {
+        name: 'Fiend',
+        id: '13',
+        deck: 'monsters',
+        row: 'close',
+        strength: '6',
+        ability: '',
+        filename: 'fiend',
+        count: '1'
+    },
+    {
+        name: 'Fire Elemental',
+        id: '14',
+        deck: 'monsters',
+        row: 'siege',
+        strength: '6',
+        ability: '',
+        filename: 'fire_elemental',
+        count: '1'
+    },
+    {
+        name: 'Foglet',
+        id: '39',
+        deck: 'monsters',
+        row: 'close',
+        strength: '2',
+        ability: '',
+        filename: 'fogling',
+        count: '1'
+    },
+    {
+        name: 'Forktail',
+        id: '19',
+        deck: 'monsters',
+        row: 'close',
+        strength: '5',
+        ability: '',
+        filename: 'forktail',
+        count: '1'
+    },
+    {
+        name: 'Frightener',
+        id: '23',
+        deck: 'monsters',
+        row: 'close',
+        strength: '5',
+        ability: '',
+        filename: 'frightener',
+        count: '1'
+    },
+    {
+        name: 'Gargoyle',
+        id: '37',
+        deck: 'monsters',
+        row: 'ranged',
+        strength: '2',
+        ability: '',
+        filename: 'gargoyle',
+        count: '1'
+    },
+    {
+        name: 'Ghoul',
+        id: '44',
+        deck: 'monsters',
+        row: 'close',
+        strength: '1',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [45, 46],
+        filename: 'ghoul',
+        count: '1'
+    },
+    {
+        name: 'Ghoul',
+        id: '45',
+        deck: 'monsters',
+        row: 'close',
+        strength: '1',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [44, 46],
+        filename: 'ghoul_1',
+        count: '1'
+    },
+    {
+        name: 'Ghoul',
+        id: '46',
+        deck: 'monsters',
+        row: 'close',
+        strength: '1',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [45, 44],
+        filename: 'ghoul_2',
+        count: '1'
+    },
+    {
+        name: 'Grave Hag',
+        id: '25',
+        deck: 'monsters',
+        row: 'ranged',
+        strength: '5',
+        ability: '',
+        filename: 'gravehag',
+        count: '1'
+    },
+    {
+        name: 'Griffin',
+        id: '21',
+        deck: 'monsters',
+        row: 'close',
+        strength: '5',
+        ability: '',
+        filename: 'gryffin',
+        count: '1'
+    },
+    {
+        name: 'Harpy',
+        id: '35',
+        deck: 'monsters',
+        row: 'agile',
+        strength: '2',
+        ability: '',
+        filename: 'harpy',
+        count: '1'
+    },
+    {
+        name: 'Ice Giant',
+        id: '24',
+        deck: 'monsters',
+        row: 'siege',
+        strength: '5',
+        ability: '',
+        filename: 'frost_giant',
+        count: '1'
+    },
+    {
+        name: 'Imlerith',
+        id: '144',
+        deck: 'monsters',
+        row: 'close',
+        strength: '10',
+        ability: 'hero',
+        filename: 'imlerith',
+        count: '1'
+    },
+    {
+        name: 'Kayran',
+        id: '146',
+        deck: 'monsters',
+        row: 'agile',
+        strength: '8',
+        ability: 'hero morale',
+        filename: 'kayran',
+        count: '1'
+    },
+    {
+        name: 'Leshen',
+        id: '145',
+        deck: 'monsters',
+        row: 'ranged',
+        strength: '10',
+        ability: 'hero',
+        filename: 'leshen',
+        count: '1'
+    },
+    {
+        name: 'Nekker',
+        id: '41',
+        deck: 'monsters',
+        row: 'close',
+        strength: '2',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [42, 43],
+        filename: 'nekker',
+        count: '1'
+    },
+    {
+        name: 'Nekker',
+        id: '42',
+        deck: 'monsters',
+        row: 'close',
+        strength: '2',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [41, 43],
+        filename: 'nekker_1',
+        count: '1'
+    },
+    {
+        name: 'Nekker',
+        id: '43',
+        deck: 'monsters',
+        row: 'close',
+        strength: '2',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [42, 41],
+        filename: 'nekker_2',
+        count: '1'
+    },
+    {
+        name: 'Plague Maiden',
+        id: '20',
+        deck: 'monsters',
+        row: 'close',
+        strength: '5',
+        ability: '',
+        filename: 'mighty_maiden',
+        count: '1'
+    },
+    {
+        name: 'Vampire - Bruxa',
+        id: '33',
+        deck: 'monsters',
+        row: 'close',
+        strength: '4',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [30, 31, 32],
+        filename: 'bruxa',
+        count: '1'
+    },
+    {
+        name: 'Vampire - Ekimmara',
+        id: '30',
+        deck: 'monsters',
+        row: 'close',
+        strength: '4',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [33, 31, 32],
+        filename: 'ekkima',
+        count: '1'
+    },
+    {
+        name: 'Vampire - Fleder',
+        id: '31',
+        deck: 'monsters',
+        row: 'close',
+        strength: '4',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [30, 33, 32],
+        filename: 'fleder',
+        count: '1'
+    },
+    {
+        name: 'Vampire - Garkain',
+        id: '32',
+        deck: 'monsters',
+        row: 'close',
+        strength: '4',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [30, 31, 33],
+        filename: 'garkain',
+        count: '1'
+    },
+    {
+        name: 'Vampire - Katakan',
+        id: '34000000',
+        deck: 'monsters',
+        row: 'close',
+        strength: '5',
+        ability: 'muster muster_to_fetch muster_fetcher',
+        fetchMusterId: [30, 31, 32, 33],
+        filename: 'katakan',
+        count: '1'
+    },
+    {
+        name: 'Werewolf',
+        id: '22',
+        deck: 'monsters',
+        row: 'close',
+        strength: '5',
+        ability: '',
+        filename: 'werewolf',
+        count: '1'
+    },
+    {
+        name: 'Wyvern',
+        id: '40',
+        deck: 'monsters',
+        row: 'ranged',
+        strength: '2',
+        ability: '',
+        filename: 'wyvern',
+        count: '1'
+    },
+    {
+        name: 'Toad',
+        id: '',
+        deck: 'monsters',
+        row: 'ranged',
+        strength: '7',
+        ability: 'scorch_r',
+        filename: 'toad',
+        count: '1'
+    }
+]

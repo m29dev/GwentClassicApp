@@ -3,53 +3,27 @@
 // import { setGameInfo } from '../../../redux/authSlice'
 import { useEffect, useState } from 'react'
 import { View, Text, ImageBackground, Image, StyleSheet } from 'react-native'
+import { supabase } from '../../../supabaseConfig';
 
 const CardComponent = (card) => {
-    // const { gameInfo } = useSelector((state) => state.auth)
-
-    // const dispatch = useDispatch()
-
-    // const handlePlayCard = () => {
-    //     const gameInfoEdit = structuredClone(gameInfo)
-    //     gameInfoEdit.gamePlayerCurrent.player_card_selected = card?.card
-
-    //     dispatch(setGameInfo(gameInfoEdit))
-    // }
-
-    const [imageUri, setImageUri] = useState('')
-    const [img, setImg] = useState([{ ciri: '../../../assets/sm/neutral_ciri.jpg' }])
-
     const [cardAbilites, setCardAbilites] = useState(null)
-    useEffect(() => {
-        const arr = card?.card?.ability?.split(' ')
-        setCardAbilites(arr)
-        // console.log(card)
 
-        console.log(`require(../../../assets/sm/${card?.card?.deck}_${card?.card?.filename}.jpg)`)
+    const handleCardSelect = async () => {
+        try {
 
-
-        setImageUri(`../../../assets/sm/${card?.card?.deck}_${card?.card?.filename}.jpg`)
-        console.log(imageUri)
-
-        console.log("URI: ", img[0].ciri)
-    }, [card, img])
+        } catch (err) {
+            console.log(err)
+        }
+    }
 
     return (
-        <View>
+        <View onClick={handleCardSelect}>
             <ImageBackground
                 style={styles.sCard}
-            // style={{
-            //     backgroundImage: `url("/sm/${card?.card?.deck}_${card?.card?.filename}.jpg")`,
-            // }}
-            // onClick={handlePlayCard}
-            // source={require("../../../assets/sm/" + card?.card?.deck)}
-            // source={require('../../../assets/sm/neutral_ciri.jpg')}
-            // source={require(img[0].ciri)}
-
+                source={{ uri: `https://sgbeiinbhldfczsgaaou.supabase.co/storage/v1/object/public/images/${card.card.deck}_${card.card.filename}.jpg` }}
             >
                 <Image
                     style={styles.sCardBorder}
-
                     source={require('../../../assets/icons/border_gold.png')}
                 ></Image>
 
@@ -58,11 +32,6 @@ const CardComponent = (card) => {
                     card?.card?.strength && !card?.card?.ability.includes('hero') && (
                         <ImageBackground
                             className="card-power-box"
-
-                            // style={{
-                            //     backgroundImage: `url("/icons/power_normal_icon.png")`,
-                            // }}
-
                             source={require('../../../assets/icons/power_normal_icon.png')}
                         >
                             <Text className="card-power">{card?.card?.strength}</Text>
@@ -74,12 +43,8 @@ const CardComponent = (card) => {
                 {
                     card?.card?.strength && card?.card?.ability.includes('hero') && (
                         <ImageBackground
-                            // className="card-power-hero-box"
-
                             style={styles.sCardPowerHeroBox}
-
                             source={require('../../../assets/icons/power_hero.png')}
-
                         >
                             <Text className="card-power-hero">
                                 {card?.card?.strength}
@@ -113,7 +78,7 @@ const CardComponent = (card) => {
                     ))
                 }
             </ImageBackground>
-        </View >
+        </View>
 
     )
 }
